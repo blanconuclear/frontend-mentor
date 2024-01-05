@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(47, 88%, 63%);
+}
+
+.container {
+  border: solid 1px;
+  width: 336px;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 14px 14px 0px -3px rgb(0, 0, 0);
+  margin: 20px;
+}
+
+.container .fondo {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.container h5 {
+  background-color: hsl(47, 88%, 63%);
+  width: 85px;
+  text-align: center;
+  border-radius: 5px;
+  padding: 8px;
+  margin: 15px 0;
+}
+
+.container .fecha {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.839);
+}
+
+.container h1 {
+  font-size: 1.1rem;
+  margin: 15px 0;
+  color: hsl(47, 88%, 63%);
+  letter-spacing: 0.5px;
+}
+
+.container .descripcion {
+  font-size: 12px;
+  font-weight: 100;
+  color: rgba(0, 0, 0, 0.686);
+  width: 250px;
+  line-height: 20px;
+}
+
+.container .container_avatar {
+  display: flex;
+  margin-top: 15px;
+  align-items: center;
+}
+
+.container .container_avatar .avatar {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.container .container_avatar .autor {
+  font-size: 10px;
+  color: black;
+}
