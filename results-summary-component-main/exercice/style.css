@@ -1,0 +1,165 @@
+/* Primarios */
+:root {
+  --light-red: hsl(0, 100%, 67%);
+  --orangey-yellow: hsl(39, 100%, 56%);
+  --green-teal: hsl(166, 100%, 37%);
+  --cobalt-blue: hsl(234, 85%, 45%);
+}
+
+/* Grandientes */
+:root {
+  --light-slate-blue-bg: hsl(252, 100%, 67%);
+  --light-royal-blue-bg: hsl(241, 81%, 54%);
+  --violet-blue-circle: hsla(256, 72%, 46%, 1);
+  --persian-blue-circle: hsla(241, 72%, 46%, 0);
+}
+
+/* Fuentes */
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,500;0,700;0,800;1,500;1,700;1,800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 735px;
+  display: flex;
+  box-shadow: 13px 15px 20px -8px hsla(219, 60%, 74%, 0.19);
+  border-radius: 20px;
+}
+
+.minicontainer-2,
+.minicontainer-1 {
+  flex: 1;
+  padding: 40px;
+}
+
+/* Primer container */
+
+.minicontainer-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    to bottom,
+    var(--light-slate-blue-bg),
+    var(--light-royal-blue-bg)
+  );
+  color: white;
+  border-radius: 20px;
+}
+
+.minicontainer-1 .titulo_resultado {
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.663);
+}
+
+.puntuacion_numero {
+  background: radial-gradient(
+    circle,
+    var(--violet-blue-circle),
+    var(--persian-blue-circle)
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin: 40px;
+  filter: blur(0.5px); /* Ajusta el valor de blur según tus preferencias */
+}
+
+.minicontainer-1 .puntuacion_numero {
+  font-size: 3rem;
+}
+
+.minicontainer-1 .puntuacion_numero .maxima_puntuacion {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.404);
+}
+
+.minicontainer-1 .puntucacion_escrita {
+  font-size: 1.3rem;
+}
+
+.minicontainer-1 .puntuacion_info {
+  max-width: 170px;
+  text-align: center;
+  margin-top: 25px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.663);
+  line-height: 17px;
+}
+
+/* Segundo container */
+
+.minicontainer-2 .miniContainer {
+  display: flex;
+  padding: 15px;
+  margin: 20px 0;
+  justify-content: space-between;
+}
+
+.minicontainer-2 .mismoEstilo {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.miniContainer {
+  border-radius: 10px;
+}
+
+.minicontainer-2 .reaction {
+  color: var(--light-red);
+}
+
+.minicontainer-2 .memory {
+  color: var(--orangey-yellow);
+}
+
+.minicontainer-2 .verbal {
+  color: var(--green-teal);
+}
+
+.minicontainer-2 .visual {
+  color: var(--cobalt-blue);
+}
+
+.minicontainer-2 .minicontainerColor-1 {
+  background-color: hsla(0, 100%, 67%, 0.127);
+}
+
+.minicontainer-2 .minicontainerColor-2 {
+  background-color: hsla(39, 100%, 56%, 0.127);
+}
+
+.minicontainer-2 .minicontainerColor-3 {
+  background-color: hsla(166, 100%, 37%, 0.127);
+}
+
+.minicontainer-2 .minicontainerColor-4 {
+  background-color: hsla(234, 85%, 45%, 0.127);
+}
+
+.minicontainer-2 button {
+  background-color: rgb(42, 51, 78);
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 15px;
+  border-radius: 30px;
+  margin-top: 20px;
+}
